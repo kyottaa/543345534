@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Список песен</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #333;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                padding: 0 20px;
+            }
+
+            li {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Список песен</h1>
+        <ul id="song-list">
+            <li><img src="assets/1.png" alt="Мой калашников"><a href="index.html?song=0">Мой калашников</a></li>
+            <li><img src="assets/2.png" alt="Юморист"><a href="index.html?song=1">Юморист</a></li>
+            <li><img src="assets/3.png" alt="Антидепрессант"><a href="index.html?song=2">Антидепрессант</a></li>
+            <li><img src="assets/4.png" alt="ПОДРУГА ПОДРУГ"><a href="index.html?song=3">ПОДРУГА ПОДРУГ</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
